@@ -1,5 +1,6 @@
 .creation{
     display: grid;
+    font-family: var(--font-2);
     grid-template-columns: 1fr;
       @media (min-width: 780px){
         padding: 95px;
