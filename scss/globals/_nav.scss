@@ -1,0 +1,148 @@
+
+header{
+    background-image:  var(--bg-img-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-1);
+    color: var(--white);
+    position: relative;
+    min-height: 100vh;
+
+        @media (min-width: 780px){
+        background-image: var(--bg-img-desk);  
+        background-size: cover;
+        min-height: 50vh;
+    }
+}
+
+
+
+
+.nav-first{
+    display: flex;
+}
+
+.nav-items{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--Black);
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    z-index: 998;
+    
+    @media (min-width: 780px){
+        display: flex;
+        background: inherit;
+        flex-direction: row;
+        font-size: 1rem;
+        justify-content: right;
+        right: 5vw;
+    }
+}
+
+.list-item{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 780px){
+        flex-direction: row;
+    }
+    
+    a,
+    a::before,
+    a::after{
+        text-decoration: none;
+        color: var(--white);
+        margin: 20px;
+        font-size: 1.8rem;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    
+        @media (min-width: 780px){
+            font-size: 1rem;
+            letter-spacing: 0;
+            margin: 5px;
+            text-transform: inherit;
+            padding: 20px;
+        }
+    
+        &:hover{
+            border-bottom: 2px solid var(--Grey-200);
+        }
+    }
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+
+        @media (min-width: 780px){
+        display: none;    
+    }
+    
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    .logo img{
+        width: 30px;
+    }
+}
+
+.int{
+    display: none;
+}
+
+.icon-close{
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    @media (min-width: 780px){
+        display: none;    
+    }
+    
+}
+
+.bg-text{
+    position: absolute;
+    top: 35vh;
+    left: 8vw;
+    font-size: 6.5vw;
+    width: 57.75vw;
+    font-weight: 100;
+    border: 2px solid var(--white);
+    padding: 15px;
+    margin: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: 780px){
+       top: 15vh;
+       font-size: 3vw;
+       left: 50px;
+       width: 35vw;
+       letter-spacing: 10px;
+    }
+    
+}
+

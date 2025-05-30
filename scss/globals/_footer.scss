@@ -1,0 +1,107 @@
+footer{
+    background-color: var(--Black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin-top: 50px;
+
+    .footer-logo{
+        @media (min-width: 780px){
+            align-self: self-start;
+        }
+        img{
+            width: 30vw;
+
+            @media (min-width: 780px){
+                width: 10vw;
+                margin: 10px;
+                
+            }
+        }
+    }
+
+    @media (min-width: 780px){
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-items{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+       
+
+            a,
+            a::before,
+            a::after{
+                text-decoration: none;
+                color: var(--white);
+                margin-right: 10px;
+                padding: 25px 0;
+                font-size: 1.5rem;
+
+                  @media (min-width: 780px){
+                    font-size: .7rem;
+                  }
+            }
+
+        @media (min-width: 780px){
+            flex-direction: row;
+            align-self: self-start;
+            font-size: 1vw;
+        }
+    }
+
+    .socials{
+
+        @media (min-width: 780px){
+            align-self: self-end;
+        }
+        img{
+            margin: 10px;
+            width: 7vw;
+
+            @media (min-width: 780px){
+                width: 2vw;
+                
+            }
+        }
+    }
+
+    p{
+        color: var(--Grey-200);
+        margin: 10px;
+        font-size: 4vw;
+       
+
+        @media (min-width: 780px){
+            font-size: 1vw;
+            align-self: self-end;
+        }
+    }
+
+    .foot-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media (min-width: 780px){
+            justify-content: start;
+        }
+    }
+
+    .foot-down{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (min-width: 780px){
+            justify-content: end;
+        }
+    }
+}
